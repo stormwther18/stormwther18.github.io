@@ -1,0 +1,143 @@
+# SITE SETUP
+# Documentation: https://docs.hugoblox.com/
+
+############################
+## APPEARANCE
+############################
+
+appearance:
+  theme_day: minimal
+  theme_night: minimal
+  font: native
+  font_size: L
+
+############################
+## SEO
+############################
+
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: ''
+    description: 'PhD student in Statistics at Shanghai Jiao Tong University. Research in robust divergence methods, generative model alignment, and statistical learning theory.'
+    twitter: ''
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    google_tag_manager: ''
+    microsoft_clarity: ''
+  verification:
+    google: ''
+    baidu: ''
+
+############################
+## SITE HEADER
+############################
+
+header:
+  navbar:
+    enable: true
+    align: r
+    show_logo: true
+    show_language: false
+    show_day_night: true
+    show_search: true
+    highlight_active_link: true
+
+############################
+## SITE FOOTER
+############################
+
+footer:
+  copyright:
+    notice: '© {year} Andy Hong. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+
+############################
+## MULTILINGUAL
+############################
+
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+  address_format: en-us
+
+############################
+## SITE FEATURES
+############################
+
+features:
+  syntax_highlighter:
+    enable: false
+    extra_languages:
+      - r
+      - latex
+  math:
+    enable: true
+  privacy_pack:
+    enable: false
+  repository:
+    url: 'https://github.com/stormwther18/stormwther18.github.io'
+    content_dir: content
+    branch: main
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ''
+  search:
+    provider: wowchemy
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
+  map:
+    provider: ''
+    api_key: ''
+    zoom: 15
+
+############################
+## EXTENSIONS
+############################
+
+extensions:
+  cms:
+    branch_backend: ''
+    local_backend: false
+  academicons:
+    enable: true
+
+############################
+## CONTACT DETAILS
+##
+## These details power the Contact widget (if enabled).
+############################
+
+contact:
+  email: 10225001401@stu.ecnu.edu.cn
+  address:
+    street: ''
+    city: Shanghai
+    region: ''
+    postcode: ''
+    country: China
+    country_code: CN
+  coordinates:
+    latitude: '31.0245'
+    longitude: '121.4333'
+  directions: ''
+  appointment_url: ''
+  contact_links: []
+  autolink: true
+  form:
+    provider: ''
+    formspree:
+      id: ''
+    netlify:
+      captcha: false
