@@ -1,61 +1,37 @@
 ---
 title: 'HYVINT: An Intensity-Driven Hypergraph Generative Model with Structure-Preserving Variational Embeddings'
 
-# Authors
-# A YAML list of author names
-# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
-# write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
   - Shuntuo Xu
   - Zhou Yu
 
-# Author notes (optional)
 author_notes:
   - 'First Author'
   - ''
   - 'Corresponding Author'
 
-date: '2025-10-01'
+date: '2026-01-01'
 doi: ''
 
-# Schedule page publish date (NOT publication's date).
-publishDate: '2025-10-01'
+publishDate: '2026-01-01'
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
 publication_types: ['paper-conference']
 
-# Publication name and optional abbreviated publication name.
 publication: "Under review at the *International Conference on Machine Learning (ICML 2026)*"
 publication_short: "Under review at *ICML 2026*"
 
 abstract: >
-  We propose HYVINT, an intensity-driven hypergraph generative model that learns 
-  structure-preserving variational embeddings for hypergraphs. Unlike conventional 
-  graph generative models that treat edges as binary, HYVINT explicitly models 
-  the intensity of hyperedge interactions, enabling richer and more faithful 
-  representations of higher-order relational data. By combining a variational 
-  autoencoder framework with hypergraph-specific structure-preserving objectives, 
-  HYVINT achieves strong performance on hypergraph generation and link prediction tasks.
+  Hypergraphs provide a principled framework for modeling polyadic interactions, with applications in areas including recommendation systems, social networks, and molecular modeling. However, due to the discreteness and hyperedge sparsity, hypergraph generation remains challenging. Existing generators are mainly black-box neural models or probabilistic models without an interpretable, explicit generative mechanism, leading to compromised generation fidelity. To address these limitations, we propose a novel hypergraph generation framework, HYVINT. Our key innovations are twofold: (i) we develop an intensity-driven generative mechanism for hypergraphs, and (ii) we construct a variational estimator that efficiently learns structure-preserving embeddings for latent diffusion. We provide theoretical guarantees and empirically demonstrate that HYVINT outperforms state-of-the-art baselines on both synthetic simulations and real-world datasets.
 
-# Summary. An optional shortened abstract.
-summary: A novel hypergraph generative model leveraging intensity-driven mechanisms and structure-preserving variational embeddings.
+summary: A novel hypergraph generation framework using intensity-driven mechanisms and structure-preserving variational embeddings for latent diffusion.
 
 tags:
-  - Hypergraph
-  - Generative Model
+  - Hypergraph Generation
   - Variational Inference
-  - Graph Learning
+  - Diffusion Models
 
-# Display this page in the Featured widget?
 featured: true
-
-# Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
 
 url_pdf: ''
 url_code: ''
@@ -66,14 +42,11 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: ''
   focal_point: ''
   preview_only: false
 
 projects: []
-
 slides: ''
 ---

@@ -1,0 +1,87 @@
+{{/* Custom Biography Block — portrait avatar, wave entrance animation */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := $block.content.username | default "admin" }}
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+  {{ errorf "Could not find author page at `%s`." $person_page_path }}
+{{ end }}
+{{ $person := $person_page.Params }}
+{{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
+
+<div class="resume-biography py-8 px-4 sm:py-12 md:py-16 relative overflow-hidden">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+
+      {{/* Left Column */}}
+      <div class="md:col-span-4 flex flex-col items-center text-center space-y-5">
+
+        {{/* Avatar */}}
+        {{ if $avatar }}
+        <div class="wave-in" style="--wave-delay: 0s">
+          {{ $avatar_image := $avatar.Fit "480x640" }}
+          <img class="rounded-xl shadow-lg border border-gray-200 dark:border-gray-700"
+               src="{{ $avatar_image.RelPermalink }}"
+               alt="{{ $person_page.Title }}"
+               style="width: 200px; height: auto;">
+        </div>
+        {{ end }}
+
+        {{/* Name, Role, Org */}}
+        <div class="space-y-2 wave-in" style="--wave-delay: 0.15s">
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white leading-tight">
+            {{- $person_page.Title -}}
+          </h1>
+          {{ with $person.role }}
+            <p class="text-base font-medium text-primary-600 dark:text-primary-400">{{ . | markdownify }}</p>
+          {{ end }}
+          {{ range $person.organizations }}
+            <p class="text-sm text-gray-600 dark:text-gray-300">
+              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener" class="hover:text-primary-600 transition-colors">{{ end }}
+              {{ .name }}
+              {{ if .url }}</a>{{ end }}
+            </p>
+          {{ end }}
+        </div>
+
+        {{/* Social Icons */}}
+        <div class="flex flex-wrap justify-center gap-3 wave-in" style="--wave-delay: 0.3s">
+          {{ range $person.profiles }}
+          {{ $link := .url | default .link }}
+          {{ $scheme := (urls.Parse $link).Scheme }}
+          {{ $target := "" }}
+          {{ if not $scheme }}
+            {{ $link = (.url | default .link) | relLangURL }}
+          {{ else if in (slice "http" "https") $scheme }}
+            {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+          {{ end }}
+          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}
+             aria-label="{{ .icon }}"
+             {{ with .label }} title="{{.}}"{{ end }}
+             class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400
+                    hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors border border-gray-200 dark:border-gray-700">
+            {{ partial "functions/get_icon" (dict "name" .icon "attributes" "class=\"w-4 h-4\"") }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+
+      {{/* Right Column: Bio */}}
+      <div class="md:col-span-8 hb-about-content wave-in" style="--wave-delay: 0.45s">
+        {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
+        <div>
+          <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+            {{ $block.content.headings.about | default "About" }}
+          </h2>
+          <div class="bio-text text-gray-700 dark:text-gray-300 leading-relaxed">
+            {{ . }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</div>

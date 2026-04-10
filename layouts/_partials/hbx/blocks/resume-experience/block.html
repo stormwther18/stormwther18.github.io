@@ -1,0 +1,53 @@
+{{/* Custom Resume Experience Block — combined work + education timeline, no sub-headers */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := $block.content.username | default "admin" }}
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+  {{ errorf "Could not find author page at `%s`." $person_page_path }}
+{{ end }}
+{{ $person := $person_page.Params }}
+
+<div class="flex flex-col items-center mx-auto w-full max-w-prose justify-center hb-main-content">
+  {{ with $block.content.title }}
+  <h2 class="w-full text-left text-xl font-semibold text-gray-900 dark:text-white mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">{{ . }}</h2>
+  {{ end }}
+
+  <ol class="relative w-full border-s border-gray-200 dark:border-gray-700">
+
+    {{/* Work entries */}}
+    {{ range $person.work }}
+    <li class="mb-8 ms-6">
+      <span class="absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-5 h-5 text-primary-800 dark:text-primary-300"><path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"></path></svg>
+      </span>
+      <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{ .position }}</h3>
+      <span class="block text-sm font-normal leading-none text-gray-500 dark:text-gray-300 mb-1">{{ .company_name }}</span>
+      <time class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+        {{ if .date_start }}{{ (time .date_start) | time.Format "January 2006" }} &ndash; {{ end }}
+        {{ if .date_end }}{{ (time .date_end) | time.Format "January 2006" }}{{ else }}Present{{ end }}
+      </time>
+      {{ with .summary }}<p class="text-sm font-normal text-gray-500 dark:text-gray-300">{{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+
+    {{/* Education entries */}}
+    {{ range $person.education }}
+    <li class="mb-8 ms-6">
+      <span class="absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-5 h-5 text-primary-800 dark:text-primary-300"><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path></svg>
+      </span>
+      <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{ .area }}</h3>
+      <span class="block text-sm font-normal leading-none text-gray-500 dark:text-gray-300 mb-1">{{ .institution }}</span>
+      <time class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+        {{ if .date_start }}{{ (time .date_start) | time.Format "January 2006" }} &ndash; {{ end }}
+        {{ if .date_end }}{{ (time .date_end) | time.Format "January 2006" }}{{ else }}Present{{ end }}
+      </time>
+      {{ with .summary }}<p class="text-sm font-normal text-gray-500 dark:text-gray-300">{{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+
+  </ol>
+</div>

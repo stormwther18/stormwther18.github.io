@@ -1,0 +1,67 @@
+/* ===== Xinyi Hong — Custom Styles ===== */
+
+/* Import Open Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Apply Open Sans to everything */
+*, *::before, *::after,
+body, h1, h2, h3, h4, h5, h6,
+p, li, span, div, a, button, input,
+nav, .navbar, code, pre {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* ── Pure white background ── */
+html, body {
+  background-color: #ffffff !important;
+}
+
+/* ── Wave entrance animation ── */
+@keyframes waveIn {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wave-in {
+  opacity: 0;
+  animation: waveIn 0.65s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: var(--wave-delay, 0s);
+}
+
+/* ── About section: 2× the base sizes ── */
+/* Base: heading text-xl = 1.25rem → 2.5rem; body text-sm = 0.875rem → 1.75rem */
+.hb-about-content h2 {
+  font-size: 1.75rem !important;
+  line-height: 1.3 !important;
+}
+.hb-about-content .bio-text,
+.hb-about-content .bio-text p {
+  font-size: 1.35rem !important;
+  line-height: 1.8 !important;
+}
+
+/* ── Publications and below: 1.4× the base sizes ── */
+/* Base: heading text-xl = 1.25rem → 1.75rem; title text-base = 1rem → 1.4rem; detail text-sm = 0.875rem → 1.225rem */
+.hb-main-content h2 {
+  font-size: 1.4rem !important;
+  line-height: 1.3 !important;
+}
+.hb-main-content h3 {
+  font-size: 1.1rem !important;
+}
+.hb-main-content p,
+.hb-main-content span,
+.hb-main-content time,
+.hb-main-content li {
+  font-size: 0.95rem !important;
+  line-height: 1.7 !important;
+}

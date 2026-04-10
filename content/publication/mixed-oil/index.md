@@ -1,7 +1,6 @@
 ---
 title: 'Enhancing Mixed Oil Length Prediction through Graph Representation Learning'
 
-# Authors
 authors:
   - admin
   - Hai Shu
@@ -20,35 +19,25 @@ author_notes:
   - ''
   - 'Corresponding Author'
 
-date: '2024-06-01'
+date: '2026-03-01'
 doi: ''
 
-publishDate: '2024-06-01'
+publishDate: '2026-03-01'
 
-# Publication type.
 publication_types: ['article-journal']
 
-publication: "Under review at *Expert Systems With Applications*"
-publication_short: "Under review at *ESWA*"
+publication: "Under review at *Engineering Applications of Artificial Intelligence*"
+publication_short: "Under review at *EAAI*"
 
 abstract: >
-  Accurate prediction of mixed oil interface length in multiproduct pipeline 
-  transportation is critical for ensuring product quality and reducing operational 
-  costs. We propose a graph representation learning framework that models the 
-  complex interdependencies among pipeline segments, flow conditions, and fluid 
-  properties as a graph structure. By leveraging message-passing neural networks 
-  to propagate spatial and temporal features across the pipeline graph, our method 
-  substantially improves prediction accuracy over traditional regression baselines 
-  and recurrent neural network approaches. Extensive experiments on real-world 
-  pipeline data demonstrate the effectiveness and robustness of the proposed method.
+  During the pipeline transportation of refined oil products, the inevitable formation of mixed oil segments poses significant economic challenges to pipeline networks. Therefore, it is critically important to accurately predict the length of these mixed oil segments. Although previous methods have achieved relatively accurate predictions by integrating machine and deep learning algorithms, they ignore the intrinsic dependencies present in real-world mixed oil data, which substantially degrades model accuracy. To address this issue, we propose a novel model — Sample Dependencies Incorporated Graph Representation Learning (SDI-GRL) model, which explicitly represents the underlying physical mechanisms of mixed oil formation. This graph-based framework allows our model to capture the intrinsic dependencies among samples absent in prior works. Furthermore, a case study on a mixed oil dataset demonstrates that our SDI-GRL model surpasses the state-of-the-art approach, achieving more than 20% improvement in prediction accuracy.
 
-summary: A graph representation learning approach for improving mixed oil interface length prediction in multiproduct pipeline transportation.
+summary: A graph representation learning approach that captures intrinsic sample dependencies for mixed oil interface length prediction in multiproduct pipeline transportation.
 
 tags:
-  - Graph Neural Networks
+  - Multi-product Pipeline
+  - Mixed Oil Length
   - Graph Representation Learning
-  - Pipeline Transportation
-  - Prediction
 
 featured: true
 

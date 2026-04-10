@@ -1,0 +1,20 @@
+{{/* Navigation Cards Grid Block */}}
+{{ $block := .wcBlock }}
+
+<div class="flex flex-col items-center mx-auto w-full max-w-3xl px-4">
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
+    {{ range $idx, $item := $block.content.items }}
+    {{ $delay := printf "%.2fs" (mul (add $idx 4) 0.12) }}
+    <a href="{{ $item.url }}"
+       class="wave-in flex flex-col items-center justify-center gap-2 p-6 rounded-xl border border-gray-200 dark:border-gray-700
+              bg-white dark:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-500
+              hover:shadow-md transition-all duration-200 text-center group"
+       style="--wave-delay: {{ $delay }}">
+      <span class="text-2xl">{{ $item.icon }}</span>
+      <span class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-white">
+        {{ $item.name }}
+      </span>
+    </a>
+    {{ end }}
+  </div>
+</div>

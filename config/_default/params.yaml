@@ -6,10 +6,9 @@
 ############################
 
 appearance:
-  theme_day: minimal
-  theme_night: minimal
+  color: stone
   font: native
-  font_size: L
+  font_size: M
 
 ############################
 ## SEO
@@ -51,7 +50,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Andy Hong. This work is licensed under {license}'
+    notice: '© {year} Xinyi Hong. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

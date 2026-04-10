@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Andy Hong (洪心驿)
+title: Xinyi Hong
 
 # Full name (for SEO)
 first_name: Xinyi
@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Incoming PhD Student in Statistics
+role: PhD Student in Statistics
 
 # Organizations/Affiliations to display in the Biography widget
 organizations:
@@ -22,27 +22,36 @@ organizations:
     url: https://www.sjtu.edu.cn/
 
 # Short bio (displayed in user profiles and author pages)
-bio: I am an incoming PhD student in Statistics at Shanghai Jiao Tong University, advised by Prof. Mingyang Ren. My research interests span robust statistical methods, generative model alignment, and statistical learning theory.
+bio: I am a PhD student in Statistics at Shanghai Jiao Tong University, advised by Prof. Mingyang Ren. My research interests include generative model, multimodal learning, LLM alignment, and statistical machine learning.
 
 # Interests to show in About widget
 interests:
-  - Robust Divergence Methods
-  - Generative Model Alignment
-  - Statistical Learning Theory
-  - Probabilistic Graphical Models
+  - Generative Model
+  - Multimodal Learning
+  - LLM Alignment
+  - Statistical Machine Learning
+
+work:
+  - position: Research Assistant
+    company_name: Department of Data Science and Artificial Intelligence, The Hong Kong Polytechnic University
+    date_start: '2026-04-01'
+    date_end: '2026-05-31'
+    summary: 'Mentor: Prof. Binyan Jiang'
 
 # Education in new HugoBlox format
 education:
-  - area: PhD in Statistics (Direct Program, incoming)
-    institution: Shanghai Jiao Tong University
-    date_start: '2025-09-01'
+  - area: PhD in Statistics
+    institution: School of Mathematical Sciences, Shanghai Jiao Tong University
+    date_start: '2026-09-01'
     date_end: ''
     summary: Advisor - Prof. Mingyang Ren
-  - area: BSc in Statistics & Computer Science (Double Degree)
-    institution: East China Normal University
-    date_start: '2021-09-01'
-    date_end: '2025-06-30'
+  - area: BSc in Statistics & Computer Science
+    institution: School of Statistics, East China Normal University
+    date_start: '2022-09-01'
+    date_end: '2026-06-30'
     summary: ''
+
+awards: []
 
 # Skills
 skills:
@@ -88,8 +97,4 @@ profiles:
 highlight_name: true
 ---
 
-I am an incoming PhD student in Statistics at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/), where I am fortunate to be advised by [Prof. Mingyang Ren](https://math.sjtu.edu.cn/). Previously, I completed a double degree in Statistics and Computer Science at [East China Normal University](https://www.ecnu.edu.cn/).
-
-My research lies at the intersection of **robust statistics**, **generative models**, and **statistical learning theory**. I am particularly interested in developing principled divergence-based methods that are both statistically efficient and computationally tractable, with applications to model alignment and representation learning.
-
-I have first-author papers on hypergraph generative models and graph representation learning for real-world prediction tasks.
+I am a PhD student in Statistics at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/), advised by [Prof. Mingyang Ren](https://ren-mingyang.github.io//). Previously, I completed a double degree in Statistics and Computer Science at [East China Normal University](https://www.ecnu.edu.cn/). My research interests include generative model, multimodal learning, LLM alignment, and statistical machine learning.
