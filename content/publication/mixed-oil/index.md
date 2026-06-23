@@ -26,8 +26,8 @@ publishDate: '2026-03-01'
 
 publication_types: ['article-journal']
 
-publication: "Under review at *Engineering Applications of Artificial Intelligence*"
-publication_short: "Under review at *EAAI*"
+publication: "Under review at *Journal of Pipeline Science and Engineering*"
+publication_short: "Under review at *JPSE*"
 
 abstract: >
   During the pipeline transportation of refined oil products, the inevitable formation of mixed oil segments poses significant economic challenges to pipeline networks. Therefore, it is critically important to accurately predict the length of these mixed oil segments. Although previous methods have achieved relatively accurate predictions by integrating machine and deep learning algorithms, they ignore the intrinsic dependencies present in real-world mixed oil data, which substantially degrades model accuracy. To address this issue, we propose a novel model — Sample Dependencies Incorporated Graph Representation Learning (SDI-GRL) model, which explicitly represents the underlying physical mechanisms of mixed oil formation. This graph-based framework allows our model to capture the intrinsic dependencies among samples absent in prior works. Furthermore, a case study on a mixed oil dataset demonstrates that our SDI-GRL model surpasses the state-of-the-art approach, achieving more than 20% improvement in prediction accuracy.

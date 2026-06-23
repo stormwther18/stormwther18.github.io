@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: PhD Student in Statistics
+role: PhD Student
 
 # Organizations/Affiliations to display in the Biography widget
 organizations:
@@ -22,13 +22,13 @@ organizations:
     url: https://www.sjtu.edu.cn/
 
 # Short bio (displayed in user profiles and author pages)
-bio: I am a PhD student in Statistics at Shanghai Jiao Tong University, advised by Prof. Mingyang Ren. My research interests include generative model, multimodal learning, LLM alignment, and statistical machine learning.
+bio: I am a PhD student in Statistics at Shanghai Jiao Tong University, advised by Prof. Mingyang Ren. My research interests include generative model, multimodal learning, LLM, and statistical machine learning.
 
 # Interests to show in About widget
 interests:
   - Generative Model
   - Multimodal Learning
-  - LLM Alignment
+  - LLM
   - Statistical Machine Learning
 
 work:
@@ -51,7 +51,15 @@ education:
     date_end: '2026-06-30'
     summary: ''
 
-awards: []
+awards:
+  - title: Outstanding Undergraduate Thesis Award
+    awarder: East China Normal University
+    date: '2026-06-01'
+    summary: ''
+  - title: Outstanding Undergraduate Graduate
+    awarder: East China Normal University
+    date: '2026-06-01'
+    summary: ''
 
 # Skills
 skills:
@@ -97,4 +105,4 @@ profiles:
 highlight_name: true
 ---
 
-I am a PhD student in Statistics at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/), advised by [Prof. Mingyang Ren](https://ren-mingyang.github.io//). Previously, I completed a double degree in Statistics and Computer Science at [East China Normal University](https://www.ecnu.edu.cn/). My research interests include generative model, multimodal learning, LLM alignment, and statistical machine learning.
+I am a PhD student in Statistics at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/), advised by [Prof. Mingyang Ren](https://ren-mingyang.github.io//). Previously, I completed my **undergraduate** double degree in Statistics and Computer Science at [East China Normal University](https://www.ecnu.edu.cn/). My research interests include generative model, multimodal learning, LLM, and statistical machine learning.
