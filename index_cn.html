@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>洪心驿 | Ph.D. @SJTU</title>
+<meta name="description" content="洪心驿，上海交通大学人工智能与统计学方向博士研究生，研究方向为生成模型、多模态学习、大语言模型与统计机器学习。">
+<meta name="author" content="洪心驿">
+<meta property="og:title" content="洪心驿">
+<meta property="og:description" content="上海交通大学人工智能与统计学方向博士研究生。生成模型、多模态学习、大语言模型、统计机器学习。">
+<meta property="og:type" content="profile">
+<link rel="icon" href="assets/icon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="favicon.ico?v=3" sizes="any">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Noto+Sans+SC:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- icon sprite -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2.5 6.5 9.5 6.5 9.5-6.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.8"/></symbol>
+  <symbol id="i-scholar" viewBox="0 0 24 24"><path d="M22 9 12 4 2 9l10 5 10-5z"/><path d="M6 11.4V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.6"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.2 4.6 18.2 5 18.2 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.05c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zm1.8 13.1H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></symbol>
+  <symbol id="i-rednote" viewBox="0 0 24 24"><path d="M2.4 4.4h4.8c2.2 0 3.9.7 4.8 1.8 .9-1.1 2.6-1.8 4.8-1.8h4.8v13.4h-4.8c-2.2 0-3.9.7-4.8 1.8-.9-1.1-2.6-1.8-4.8-1.8H2.4z"/><path d="M12 6.2v13.4"/></symbol>
+</svg>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index_cn.html" class="nav-link active">首页</a>
+    <span class="nav-sep">·</span>
+    <a href="#publications" class="nav-link">论文</a>
+    <span class="nav-sep">·</span>
+    <a href="repositories.html" class="nav-link">开源仓库</a>
+    <span class="nav-sep">·</span>
+    <a href="footprint.html" class="nav-link">足迹</a>
+  </div>
+</nav>
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="sidebar-sticky">
+      <img src="assets/img/avatar.jpg?v=11" alt="洪心驿" class="profile-photo" width="210" height="210">
+
+      <div class="sidebar-id">
+        <div class="name">洪心驿</div>
+        <div class="role">人工智能 &#124; 统计学 博士研究生</div>
+        <div class="affiliation">
+          上海交通大学
+        </div>
+      </div>
+
+      <div class="sidebar-meta">
+        <div class="contact-list">
+          <p><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+             <a href="mailto:xinyi.hong@sjtu.edu.cn">xinyi.hong@sjtu.edu.cn</a></p>
+          <p><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+             <span>上海</span></p>
+        </div>
+
+        <div class="social-icons">
+          <a href="mailto:xinyi.hong@sjtu.edu.cn" title="邮箱" aria-label="邮箱"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+          <a href="https://scholar.google.com/citations?user=sX_9eZ0AAAAJ&amp;hl=en" title="Google Scholar" aria-label="Google Scholar" rel="me noopener"><svg class="icon" aria-hidden="true"><use href="#i-scholar"/></svg></a>
+          <a href="https://github.com/stormwther18" title="GitHub" aria-label="GitHub" rel="me noopener"><svg class="icon icon--solid" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a href="https://x.com/stormwther18" title="X" aria-label="X" rel="me noopener"><svg class="icon icon--solid" aria-hidden="true"><use href="#i-x"/></svg></a>
+          <a href="https://www.linkedin.com/in/xinyi-hong-b00274390/" title="LinkedIn" aria-label="LinkedIn" rel="me noopener"><svg class="icon icon--solid" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a href="https://www.xiaohongshu.com/user/profile/65910871000000001f03a6d2" title="小红书" aria-label="小红书" rel="me noopener"><svg class="icon" aria-hidden="true"><use href="#i-rednote"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu" aria-label="章节导航">
+        <a href="#biography" class="nav-item">个人简介</a>
+        <a href="#news" class="nav-item">近期动态</a>
+        <a href="#publications" class="nav-item">论文</a>
+        <a href="#experience" class="nav-item">经历</a>
+        <a href="#education" class="nav-item">教育背景</a>
+        <a href="#awards" class="nav-item">荣誉</a>
+        <a href="#skills" class="nav-item">技能与语言</a>
+        <a href="#contact" class="nav-item">联系方式</a>
+      </nav>
+      <div class="side-map">
+        <div class="side-map-title">我在这里</div>
+        <iframe src="https://www.google.com/maps?q=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E9%97%B5%E8%A1%8C%E6%A0%A1%E5%8C%BA&amp;z=15&amp;hl=zh-CN&amp;output=embed"
+                title="上海交通大学闵行校区" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="side-map-cap">上海交通大学闵行校区
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E9%97%B5%E8%A1%8C%E6%A0%A1%E5%8C%BA" target="_blank" rel="noopener">在 Google 地图中打开</a></p>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <section id="biography">
+      <div class="section-head">
+        <h2>个人简介 🙋</h2>
+        <span class="lang-switch"><span class="cur">中文</span><span class="sep">/</span><a href="index.html" hreflang="en">EN</a></span>
+      </div>
+      <p class="lede">
+        我是<a href="https://www.sjtu.edu.cn/">上海交通大学</a><a href="https://math.sjtu.edu.cn/">数学科学学院</a>人工智能与统计方向的博士研究生，导师为<a href="https://ren-mingyang.github.io/">任明旸</a>教授。此前，我在<a href="https://www.ecnu.edu.cn/">华东师范大学</a><a href="https://stat.ecnu.edu.cn/">统计学院</a>完成了统计学与计算机科学的学士学位，并获评优秀本科毕业论文。2026 年春季，我在<a href="https://www.polyu.edu.hk/">香港理工大学</a><a href="https://www.polyu.edu.hk/dsai/">数据科学与人工智能系</a>担任研究助理，由<a href="https://www.polyu.edu.hk/dsai/people/academic-staff/jiangbinyan/">蒋滨雁</a>教授指导。
+      </p>
+      <p>
+        我目前的研究方向是多模态基座模型的 post-training，尤其是 flow matching 模型的 on-policy distillation。我致力于在统计机器学习的框架上构建 post-training 算法，并通过大规模实验与评测加以验证，以理解这些方法在基座模型规模上何时、又为何依然可靠。
+      </p>
+    </section>
+
+    <section id="news">
+      <div class="section-head">
+        <h2>近期动态 📢</h2>
+        <span class="section-note">左右滑动查看 →</span>
+      </div>
+
+      <div class="news-strip">
+        <article class="news-card pinned">
+          <span class="news-date">2026 年 9 月</span>
+          <div class="news-body">
+            将于上海交通大学数学科学学院开始统计学博士阶段的学习，导师为<a href="https://ren-mingyang.github.io/">任明旸</a>教授。
+          </div>
+        </article>
+
+        <article class="news-card">
+          <span class="news-date">2026 年 7 月</span>
+          <div class="news-body">
+            <a href="https://arxiv.org/abs/2607.25718">HYSET</a> 已在 arXiv 公开，目前投稿于 AAAI 2026，审稿中：面向 LLM 智能体的集合级工具检索，形式化为查询条件下的超边预测。代码、模型与在线 Demo 已同步开放。
+          </div>
+        </article>
+
+        <article class="news-card">
+          <span class="news-date">2026 年 6 月</span>
+          <div class="news-body">
+            于华东师范大学本科毕业，获优秀本科毕业论文与优秀本科毕业生荣誉。
+          </div>
+        </article>
+
+        <article class="news-card">
+          <span class="news-date">2026 年 5 月</span>
+          <div class="news-body">
+            超图生成模型 <a href="https://arxiv.org/abs/2605.16836">HYVINT</a> 已在 arXiv 公开，目前投稿于 AAAI 2026，审稿中。
+          </div>
+        </article>
+
+        <article class="news-card">
+          <span class="news-date">2026 年 4 月</span>
+          <div class="news-body">
+            加入香港理工大学数据科学与人工智能系，担任研究助理，由<a href="https://www.polyu.edu.hk/dsai/people/academic-staff/jiangbinyan/">蒋滨雁</a>教授指导。
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-head">
+        <h2>论文 📄</h2>
+        <span class="section-note"><sup>*</sup> 通讯作者</span>
+      </div>
+
+      <div class="pub-filters" role="group" aria-label="按主题筛选论文">
+        <button class="pub-filter active" type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button class="pub-filter" type="button" data-filter="foundation" aria-pressed="false">基座模型</button>
+        <button class="pub-filter" type="button" data-filter="genai" aria-pressed="false">生成式 AI</button>
+        <button class="pub-filter" type="button" data-filter="multimodal" aria-pressed="false">多模态学习</button>
+        <button class="pub-filter" type="button" data-filter="agent" aria-pressed="false">智能体</button>
+        <button class="pub-filter" type="button" data-filter="statml" aria-pressed="false">统计机器学习</button>
+      </div>
+
+      <article class="pub-item" data-tags="all agent statml">
+        <a class="pub-thumb" href="https://arxiv.org/abs/2607.25718" rel="noopener">
+          <img src="assets/img/pub/hyset.png" alt="HYSET framework" width="380" height="238" loading="lazy">
+        </a>
+        <div class="pub-details">
+          <div class="pub-title">Tools Are Not Islands: Set-Level Tool Retrieval for LLM Agents via Query-Conditioned Hyperedge Prediction</div>
+          <div class="pub-authors"><span class="me">Xinyi Hong</span>, Pinjun Dong, Xinyang Yu, Binyan Jiang<sup>*</sup></div>
+          <div class="pub-venue">
+            投稿于 AAAI Conference on Artificial Intelligence (AAAI) 2026，审稿中
+            <a class="pub-badge" href="https://arxiv.org/abs/2607.25718" rel="noopener">arXiv:2607.25718</a>
+          </div>
+          <div class="pub-links">
+            <a class="pub-btn" href="https://arxiv.org/abs/2607.25718" rel="noopener">arXiv</a>
+            <a class="pub-btn" href="https://arxiv.org/pdf/2607.25718" rel="noopener">PDF</a>
+            <button class="pub-btn citation-btn" type="button" data-paper="hyset">BibTeX</button>
+            <a class="pub-btn" href="https://github.com/stormwther18/HYSET" rel="noopener">GitHub</a>
+            <a class="pub-btn" href="https://huggingface.co/stormwther18/HOTS-assets" rel="noopener">Hugging Face</a>
+            <a class="pub-btn" href="https://stormwther18-hyset-demo.hf.space" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-item" data-tags="all genai statml">
+        <a class="pub-thumb" href="https://arxiv.org/abs/2605.16836" rel="noopener">
+          <img src="assets/img/pub/hyvint.png" alt="HYVINT framework" width="380" height="238" loading="lazy">
+        </a>
+        <div class="pub-details">
+          <div class="pub-title">HYVINT: Intensity-Driven Hypergraph Generation with Variational Embeddings</div>
+          <div class="pub-authors"><span class="me">Xinyi Hong</span>, Shuntuo Xu, Zhou Yu<sup>*</sup></div>
+          <div class="pub-venue">
+            投稿于 AAAI Conference on Artificial Intelligence (AAAI) 2026，审稿中
+            <a class="pub-badge" href="https://arxiv.org/abs/2605.16836" rel="noopener">arXiv:2605.16836</a>
+          </div>
+          <div class="pub-links">
+            <a class="pub-btn" href="https://arxiv.org/abs/2605.16836" rel="noopener">arXiv</a>
+            <a class="pub-btn" href="https://arxiv.org/pdf/2605.16836" rel="noopener">PDF</a>
+            <button class="pub-btn citation-btn" type="button" data-paper="hyvint">BibTeX</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-item" data-tags="all statml">
+        <span class="pub-thumb">
+          <img src="assets/img/pub/mixed-oil.png" alt="Mixed oil length prediction" width="380" height="238" loading="lazy">
+        </span>
+        <div class="pub-details">
+          <div class="pub-title">Enhancing Mixed Oil Length Prediction through Graph Representation Learning</div>
+          <div class="pub-authors"><span class="me">Xinyi Hong</span>, Hai Shu, Zhaoyang Zhang, Jiahao Wang, Lei Chen, Yanfeng Yang<sup>*</sup>, Ziqi Chen<sup>*</sup></div>
+          <div class="pub-venue">
+            投稿于 Journal of Pipeline Science and Engineering，审稿中
+          </div>
+        </div>
+      </article>
+
+      <p class="pub-empty" hidden>该方向暂无论文。</p>
+    </section>
+
+
+    <section id="experience">
+      <div class="section-head"><h2>经历 🚀</h2></div>
+
+      <div class="exp-item">
+        <div class="exp-logo"><img src="assets/img/logo/polyu.png" alt="香港理工大学" width="46" height="46"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <span class="exp-org"><a href="https://www.polyu.edu.hk/">香港理工大学</a></span>
+            <span class="exp-time">2026.04 - 2026.05</span>
+          </div>
+          <div class="exp-role">研究助理 · 数据科学与人工智能系</div>
+          <div class="exp-desc">指导教师：<a href="https://www.polyu.edu.hk/dsai/people/academic-staff/jiangbinyan/">蒋滨雁</a>教授</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-head"><h2>教育背景 🎓</h2></div>
+
+      <div class="exp-item">
+        <div class="exp-logo"><img src="assets/img/logo/sjtu.png" alt="上海交通大学" width="46" height="46"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <span class="exp-org"><a href="https://www.sjtu.edu.cn/">上海交通大学</a></span>
+            <span class="exp-time">2026.09 - 至今</span>
+          </div>
+          <div class="exp-role">统计博士研究生 · 数学科学学院</div>
+          <div class="exp-desc">导师：<a href="https://ren-mingyang.github.io/">任明旸</a>教授</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-logo"><img src="assets/img/logo/ecnu.png" alt="华东师范大学" width="46" height="46"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <span class="exp-org"><a href="https://www.ecnu.edu.cn/">华东师范大学</a></span>
+            <span class="exp-time">2022.09 - 2026.06</span>
+          </div>
+          <div class="exp-role">统计学与计算机科学学士 · 统计学院</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <div class="section-head"><h2>荣誉 🏅</h2></div>
+
+      <div class="row-item">
+        <span class="row-name">优秀本科毕业论文<span class="sub">华东师范大学</span></span>
+        <span class="row-time">2026.06</span>
+      </div>
+      <div class="row-item">
+        <span class="row-name">优秀本科毕业生<span class="sub">华东师范大学</span></span>
+        <span class="row-time">2026.06</span>
+      </div>
+      <div class="row-item">
+        <span class="row-name">国家二等奖（队长）<span class="sub">全国大学生统计建模大赛</span></span>
+        <span class="row-time">2024.08</span>
+      </div>
+      <div class="row-item">
+        <span class="row-name">优秀毕业生<span class="sub">合肥市第一中学</span></span>
+        <span class="row-time">2022.06</span>
+      </div>
+      <div class="row-item">
+        <span class="row-name">入围少年班<span class="sub">西安交通大学</span></span>
+        <span class="row-time">2019.03</span>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-head"><h2>技能与语言 🛠️</h2></div>
+
+      <div class="skill-grid">
+        <div class="skill-row">
+          <span class="skill-label">人工智能</span>
+          <span class="skill-list">多模态基座模型, Flow Matching / 扩散模型, post-training, 大模型智能体, Scaling Laws</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">统计学</span>
+          <span class="skill-list">高维统计推断, 经验过程理论, 最优传输, 变分推断, 不确定性量化, ODE/SDE</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">工程</span>
+          <span class="skill-list">Python, PyTorch, Flash Attention, FSDP, Megatron-LM, vLLM, SGLang, Slurm</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">语言</span>
+          <span class="skill-list">普通话（母语）, 英语（专业工作能力）, 粤语（口语交流）, 日语（初学）</span>
+        </div>
+      </div>
+
+      <div class="gh-graph">
+        <div class="gh-label">GitHub 活跃度</div>
+        <a href="https://github.com/stormwther18" rel="me noopener">
+          <img src="https://ghchart.rshah.org/A51C30/stormwther18"
+               alt="stormwther18 的 GitHub 贡献图" loading="lazy">
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head"><h2>联系方式 💌</h2></div>
+      <p>欢迎就生成式基座模型的 post-training 方向进行交流与合作，可通过 <a href="mailto:xinyi.hong@sjtu.edu.cn">xinyi.hong@sjtu.edu.cn</a> 与我联系。</p>
+    </section>
+
+  </main>
+
+</div>
+
+<div id="citationModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="citationHeading">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3 id="citationHeading">BibTeX 引用</h3>
+      <button class="modal-close" type="button" aria-label="关闭">&times;</button>
+    </div>
+    <pre class="citation-text" id="citationText"></pre>
+    <button class="copy-btn" id="copyBtn" type="button" data-copied="已复制！">复制到剪贴板</button>
+  </div>
+</div>
+
+<script>
+window.CITATIONS = {
+  hyset: `@article{hong2026hyset,
+  title   = {Tools Are Not Islands: Set-Level Tool Retrieval for LLM Agents
+             via Query-Conditioned Hyperedge Prediction},
+  author  = {Hong, Xinyi and Dong, Pinjun and Yu, Xinyang and Jiang, Binyan},
+  journal = {arXiv preprint arXiv:2607.25718},
+  year    = {2026}
+}`,
+  hyvint: `@article{hong2026hyvint,
+  title   = {HYVINT: Intensity-Driven Hypergraph Generation with
+             Variational Embeddings},
+  author  = {Hong, Xinyi and Xu, Shuntuo and Yu, Zhou},
+  journal = {arXiv preprint arXiv:2605.16836},
+  year    = {2026}
+}`
+};
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

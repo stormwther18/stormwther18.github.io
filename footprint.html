@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Footprint | Xinyi Hong</title>
+<meta name="description" content="Places, trips and life outside research.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Xinyi Hong">
+<link rel="icon" href="assets/icon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="favicon.ico?v=3" sizes="any">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Noto+Sans+SC:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-link">Home</a>
+    <span class="nav-sep">·</span>
+    <a href="index.html#publications" class="nav-link">Publications</a>
+    <span class="nav-sep">·</span>
+    <a href="repositories.html" class="nav-link">Repositories</a>
+    <span class="nav-sep">·</span>
+    <a href="footprint.html" class="nav-link active">Footprint</a>
+  </div>
+</nav>
+
+<div class="container container--wide">
+  <main class="main-content main-content--wide">
+
+    <section id="footprint">
+      <div class="section-head"><h2>My Footprint 🧭</h2></div>
+
+      <p class="page-lede">Places I have been since 2022, and life outside the lab.</p>
+
+      <div class="fp-map-card">
+        <div class="fp-map" id="fpMap"></div>
+        <div class="fp-map-foot">
+          <div class="fp-stats" id="fpStats"></div>
+          <p class="fp-hint">Click a pin to see just that stop.</p>
+        </div>
+      </div>
+
+      <p class="fp-demo" id="fpDemo" hidden>
+        Showing placeholder stops. Edit <code>js/footprint-data.js</code>, then set
+        <code>demo: false</code>.
+      </p>
+
+      <div class="fp-chipbar" id="fpChip"></div>
+      <div class="fp-grid" id="fpGrid"></div>
+    </section>
+
+  </main>
+</div>
+
+<script src="js/world-map.js"></script>
+<script src="js/footprint-data.js"></script>
+<script src="js/footprint.js"></script>
+</body>
+</html>

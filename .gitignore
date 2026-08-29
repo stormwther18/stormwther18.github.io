@@ -1,0 +1,8 @@
+.DS_Store
+**/.DS_Store
+node_modules/
+.claude/
+
+# superseded, unreferenced by any page
+assets/img/avatar-formal.jpg
+assets/icon-512.png
